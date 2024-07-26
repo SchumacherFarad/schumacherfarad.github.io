@@ -1,43 +1,45 @@
-body{
+body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #362F3B;
     color: #D4E5E2;
 }
-#baslik{
-    background-color: #F2AF29;
-    border: 3px solid #F2AF29;
+
+#baslik {
+    
     border-radius: 15px;
-    color: #362F3B;
+    color: #D4E5E2;
 }
-h1{
-    text-align: center;
-}
-h2{
-    text-align: center;
-}
-h3{
+
+h1 {
     text-align: center;
 }
 
-div{
+h2 {
     text-align: center;
 }
 
-nav{
+h3 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+nav {
     margin: 0 auto;
     text-align: center;
 }
 
-.navbar ul{
+.navbar ul {
     list-style-type: none;
-    background-color: #362F3B;
     padding: 0;
     display: inline-block;
     overflow: hidden;
     align-items: center;
 }
 
-.navbar a{
+.navbar a {
     color: #D4E5E2;
     text-decoration: none;
     display: block;
@@ -45,25 +47,49 @@ nav{
     text-align: center;
 }
 
-.navbar a:hover{
-    background-color: #AD343E;
+.navbar a:hover {
+    background: linear-gradient(0deg, rgba(209,143,255,0) 0%,rgba(0, 0, 0, 0.223) 30%, rgba(0, 0, 0,0.223) 70%,  rgba(209,143,255,0) 100%);
     color: #D4E5E2;
 }
 
-.navbar li{
+.navbar li {
     float: left;
 }
 
 div.projects {
     background-color: #362F3B;
-    overflow: auto;
+    overflow-x: scroll;
     white-space: nowrap;
     padding: 10px;
+    display: flex;
 }
+
 div.projects img {
     padding: 10px;
     height: 400px;
-  }
-.education{
+    max-width: 400px;
+}
+div.projects div{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 210px;
+    width: 400px;
+    font-size: x-large;
+    padding-top:45%;
+    color: #c1dae5;
+    text-decoration: none !important;
+    background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(69,0,134,1) 50%, rgba(34,34,34,1) 100%);
+}
+
+.education {
     text-align: left;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: radial-gradient(circle, rgba(84,0,144,1) 0%, rgba(46,0,79,1) 100%);
+}
+header div{
+    background: radial-gradient(circle, rgba(84,0,144,1) 0%, rgba(46,0,79,1) 100%);
 }
