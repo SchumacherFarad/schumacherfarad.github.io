@@ -55,6 +55,7 @@ nav {
 
 .navbar li {
     float: left;
+    font-size: 1vw;
 }
 
 div.projects {
