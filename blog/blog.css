@@ -13,7 +13,7 @@ nav {
     background: #000428;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #362F3B,#004e92, #362F3B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom,#362F3B, #004e92, #362F3B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    border-radius: 3vw;
 
 }
 
@@ -68,6 +68,12 @@ nav {
     filter: blur(0.5px);
 }
 
+#flexboxitem > p{
+    width: 100%;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0,0.6);
+}
+
 #Blogtxt{
     display: flex;
     flex-flow: row wrap;
@@ -81,6 +87,8 @@ nav {
     background-color: antiquewhite;
     color: #362F3B;
     width: 80vw;
+    text-align: left;
+    border-radius: 1vw;
 }
 #Blogtxtimg{
     width: 35w;
@@ -107,4 +115,25 @@ nav {
     margin-right: 1vw;
     margin-top: 0.5vh;
     margin-bottom: 0.5vh;
+}
+
+.leftimg {
+    width: 39vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    float: left;
+    margin-right: 1vw;
+    height: auto;
+    border-radius: 1vw;
+    margin-top: 0.5vh;
+}
+.rightimg {
+    width: 39vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    float: right;
+    margin-left: 1vw;
+    height: auto;
+    border-radius: 1vw;
+    margin-top: 0.5vh;
 }
