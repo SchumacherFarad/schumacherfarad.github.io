@@ -1,26 +1,163 @@
 <!DOCTYPE html>
+<html lang="tr">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farad's Blog</title>
+    <title>Farad's Blog | Thoughts & Stories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="blog.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="/blog/blog.html">Blog</a></li>
-            <li><a href="https://www.github.com/SchumacherFarad">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/ferhatkunduraci/">Linkedin</a></li>
-            <li><a href="mailto:ferhatkunduraci03@gmail.com">Email</a></li>
-            <li><a href="tel:+905445719351">Phone</a></li>
-        </ul>
-    </nav>
-    <h1>WELCOME</h1>
-    <p>to</p>
-    <h3>Farad's Blog</h3>
-    <div id="flexbox">
-        <div id="flexboxitem">To be continued</div>
-        <a href="./Yazı.html" style="text-decoration: none;"><div id="flexboxitem" style="background-image: url(/src/Dwayne.jpg); "><p>Neden Vakit Bulamıyorum?</p></div></a>
-        <a href="./Neden_Niko_Bellic_ile_Empati_Kurmamak_İmkansız.html" style="text-decoration: none;"><div id="flexboxitem" style="background-image: url(/src/GTA4.jpg); "><p>Neden Niko Bellic ile Empati Kuramamak İmkansız</p></div></a>
-    </div>
+    <div class="bg-texture"></div>
+    
+    <header class="blog-header">
+        <a href="/index.html" class="back-link">
+            <span class="back-arrow">←</span>
+            <span>Back to Home</span>
+        </a>
+        <div class="header-content">
+            <p class="header-label">The Blog</p>
+            <h1 class="header-title">Farad's Notes</h1>
+            <p class="header-subtitle">Thoughts on code, life, and everything in between</p>
+        </div>
+    </header>
+
+    <main class="blog-main">
+        <section class="posts-section">
+            <div class="posts-grid">
+                <!-- Featured Post -->
+                <article class="post-card featured">
+                    <a href="./Neden_Niko_Bellic_ile_Empati_Kurmamak_İmkansız.html" class="post-link">
+                        <div class="post-image">
+                            <img src="/src/GTA4.jpg" alt="GTA 4 Cover">
+                            <div class="post-overlay"></div>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-category">Gaming</span>
+                            <h2 class="post-title">Neden Niko Bellic ile Empati Kuramamak İmkansız</h2>
+                            <p class="post-excerpt">Grand Theft Auto serisinin en karanlık karakterlerinden biri olan Niko Bellic'in hikayesi, savaşın getirdiği travmalar ve intikam arayışı üzerine derin bir anlatı sunuyor.</p>
+                            <div class="post-meta">
+                                <span class="post-date">January 2026</span>
+                                <span class="post-read-time">8 min read</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Regular Post 1 -->
+                <article class="post-card">
+                    <a href="./Yazı.html" class="post-link">
+                        <div class="post-image">
+                            <img src="/src/Dwayne.jpg" alt="Dwayne Johnson">
+                            <div class="post-overlay"></div>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-category">Life</span>
+                            <h2 class="post-title">Neden Vakit Bulamıyorum?</h2>
+                            <p class="post-excerpt">Günlük hayatın koşturmacasında kaybettiğimiz zaman ve bunu nasıl geri kazanabileceğimiz üzerine düşünceler.</p>
+                            <div class="post-meta">
+                                <span class="post-date">January 2026</span>
+                                <span class="post-read-time">5 min read</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Regular Post 2 (Placeholder) -->
+                <article class="post-card placeholder">
+                    <div class="post-link">
+                        <div class="post-image placeholder-image">
+                            <span class="placeholder-icon">✦</span>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-category">Coming Soon</span>
+                            <h2 class="post-title">Yeni Yazılar Yolda</h2>
+                            <p class="post-excerpt">yakında burada olacak...</p>
+                            <div class="post-meta">
+                                <span class="post-date">TBD</span>
+                                <span class="post-read-time">- min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Regular Post 3 (Placeholder) -->
+                <article class="post-card placeholder">
+                    <div class="post-link">
+                        <div class="post-image placeholder-image">
+                            <span class="placeholder-icon">✦</span>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-category">Coming Soon</span>
+                            <h2 class="post-title">Yeni Yazılar Yolda</h2>
+                            <p class="post-excerpt">yakında burada olacak...</p>
+                            <div class="post-meta">
+                                <span class="post-date">TBD</span>
+                                <span class="post-read-time">- min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to get notified when new posts are published.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="your@email.com" class="newsletter-input">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="blog-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Ferhat Kunduracı. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.github.com/SchumacherFarad">GitHub</a>
+                <a href="https://www.linkedin.com/in/ferhatkunduraci/">LinkedIn</a>
+                <a href="mailto:ferhatkunduraci03@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -30px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.post-card').forEach(el => {
+            el.classList.add('fade-up');
+            observer.observe(el);
+        });
+
+        // Newsletter form
+        const newsletterForm = document.querySelector('.newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const input = newsletterForm.querySelector('input');
+                if (input.value) {
+                    alert('Thanks for subscribing!');
+                    input.value = '';
+                }
+            });
+        }
+    </script>
 </body>
+</html>

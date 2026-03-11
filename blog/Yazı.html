@@ -1,45 +1,192 @@
 <!DOCTYPE html>
+<html lang="tr">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farad's Blog</title>
+    <title>Neden Vakit Bulamıyorum? | Farad's Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="blog.css">
+    <style>
+        .article-header {
+            text-align: center;
+            padding: 6rem 2rem 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .article-header .post-category {
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-header .post-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .article-header .post-meta {
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .article-hero-image {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto 4rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        
+        .article-hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem 6rem;
+        }
+        
+        .article-content p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--text-secondary);
+            margin-bottom: 1.75rem;
+        }
+        
+        .article-content p:first-of-type::first-letter {
+            font-size: 3.5rem;
+            float: left;
+            line-height: 1;
+            padding-right: 0.5rem;
+            padding-top: 0.2rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .article-content b {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        .article-divider {
+            width: 60px;
+            height: 2px;
+            background: var(--accent);
+            margin: 3rem auto;
+        }
+        
+        .back-to-blog {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-to-blog:hover {
+            color: var(--accent);
+        }
+        
+        .back-to-blog span {
+            transition: transform 0.3s ease;
+        }
+        
+        .back-to-blog:hover span {
+            transform: translateX(-5px);
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="/blog/blog.html">Blog</a></li>
-            <li><a href="https://www.github.com/SchumacherFarad">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/ferhatkunduraci/">Linkedin</a></li>
-            <li><a href="mailto:ferhatkunduraci03@gmail.com">Email</a></li>
-            <li><a href="tel:+905445719351">Phone</a></li>
-        </ul>
-    </nav>
-    <h2 id="Title">Yazı</h2>
-    <div id="Blogtxt">
-        <div id="Blogtxtitem">
-            <p>
-                &emsp; &emsp; Hoşgeldiniz. Şu an evimde internet olmadığı için yazı yazma kararı aldım ve bu yazı size bu sebeple ulaşacak. Belki biraz uzun ve görsel kullanmayarak yazacağım için okumak istemeyebilirsiniz saygı duyarım.
-                Şimdi gelelim konumuza. Gençler neden vakit bulamıyor. Yani en azından kendi adıma ben neden vakit bulamıyorum. Bunun başlıca sebebi olan <b>kısa video bağımlılığını</b> anlatmama dahi gerek yok.
-                Günde 10 saati bulan ekran süreleri uyanık olduğumuz vaktin en az yarısını işgal ediyor. Bu bağımlılıktan kurtulmak için tabi ki sağlam bir irade lazım(ben şahsen pek başarılı değilim). İrade olmadan önerilen yöntemlerin(ekran süresi kısıtlama, uygulama silme vb. )
-                hiçbirinin işe yaramadığını düşünüyorum. İşe yaramama sebeplerini şöyle açıklayayım. İnstagramın ekran süresini kısıtladığımızı farz edelim. Bir arkadaşım bana heyecanlı bir şekilde X post/story atmış dediği anda ben o süre sınırını aşacağım ya da anlık da olsa kaldıracağım.
-                Bu durum neredeyse her gün olacak çünkü kendime tanıdığım süre 1 saat ise o 1 saatin 50 dakikası gece yatmadan önce bitecek. Sabah da uyanır uyanmaz kalan 10 dakikayı bitireceğim. Bu durumu her gün yaşayınca ister istemez o sınırı kaldırma çözümü kalıcı hale gelecek ve tekrar ekran sürem yükselecek.
-                Çünkü bırakmak için yeterli iradeye sahip değilim. <br>
-                &emsp; &emsp;Şu ana kadar denediğim en etkili yöntem <b>StopScroll</b>(Reklam olmadığını söylememe gerek yok herhalde total 3 kişi okuyor zaten(okuduysanız ulaşabildiğiniz herhangi bir platformdan flaşı patlayan kamera emojisi atın ben anlarım teşekkürler)) adında bir uygulamaydı. Uygulama basitçe Reels ya da Shorts sekmesini açtığınızda bunu algılayıp önceki ekrana dönüyor. 
-                Yani reels ve shorts dışındaki Instagram ve Youtube özelliklerini kullanmaya devam ederken bunları engelliyor. Ben uygulamayı 1 ay falan kullanıp ekran süremi 1-2 saat bandında düşürdükten sonra "Oldum ben ya" psikolojisiyle silmiştim(Raul Jimenez napıyor!?).
-                Şu an yazıyı yazarken hatırladım ve tekrar indireceğim(İnternet gelir gelmez).<br>
-                &emsp; &emsp;Devam edelim, bir diğer etken : <b>uyku düzeni.</b> KYK yurtlarını çoğunluğun aksine sevsem de, sağlıklı bir uyku düzeni oturtmak için pek sağlıklı ortamlar değiller.
-                4,6 ya da 12 kişinin tek odada kaldığı bir ortamda istediğiniz saatte değil herkesin istediği saatte uyuyabilirsiniz. Sabah 7de dersiniz var ve 10-11 gibi uyumanız daha mı sağlıklı olur?
-                Fark etmez. Işık 12'de kapanır şanslıysanız 12 buçuk gibi uyursunuz. Bu altı buçuk saat uyku demek. Ve <b>sürdürülebilir değil</b>. Haftasonu yeterince uyusanız(alarm olmadan uyansanız) bile 3. ya da 4. günde artık enerjiniz kalmayacak.
-                Bu enerjisizlik sizin motivasyonunuzu düşürecek ve bazı yapmanız gereken işleri yapmamaya, ertelemeye başlayacaksınız. Bu uyku eksikliği sizin olan vaktinizi de kullanamamanıza sebep olacak.
-                <br>
-                &emsp; &emsp; Şimdilik aklıma gelen bu kadar ve internet yoksunluğundan şu an reels de izleyemediğim için uykum biraz erken geldi o yüzden bitireceğim daha sonra aklıma gelirse bir şeyler eklerim. Bu 2 sebep neye yol açıyor onu belirtelim. Sabah derslerinden verim alamıyorsunuz. 
-                Zaten az uyuyarak beslemediğiniz beyniniz bir de sabah reelsiyle eriyor. Sabah dersinden verim alamamanız bütün sabah derslerini tekrar çalışmanız anlamına geliyor fark etmişsinizdir. Öğleden sonra hiçbir dersiniz olmadığını düşünsek bile öğleden sonranız sabahki dersi öğrenmekle geçecek. Ödevleriniz olacak, yurtta yapmanız gereken "ev" işleri olacak, arkadaşlarınız bir kahve içmek isteyecek, finaller yaklaşacak, herhangi bir kulübe girdiyseniz sürekli bir kulüp işi yapacaksınız derken bu liste uzar gider. Ama siz bir yandan kendinizi mesleki olarak herhangi bir ek alanda geliştirmek istiyor, bir spor dalıyla uğraşmak istiyor, romantik bir ilişki de istiyorsunuz. Denge kurulabilecek bir durum değil bu. Bu listeden birden fazla şeyi feda etmek zorundasınız. Kısaca kendi açımdan neden vakit bulamadığımı anlattım.
-                Okuduğunuz için teşekkür eder, Eğer bir HR iseniz şu sıkışık takvime case yollamayı tekrar gözden geçirmenizi dilerim(hangi birinize case yapacağız).
-            </p>
-            <p>
+    <div class="bg-texture"></div>
+    
+    <header class="blog-header">
+        <a href="blog.html" class="back-link">
+            <span class="back-arrow">←</span>
+            <span>Back to Blog</span>
+        </a>
+    </header>
+
+    <main>
+        <article>
+            <div class="article-header">
+                <span class="post-category">Life</span>
+                <h1 class="post-title">Neden Vakit Bulamıyorum?</h1>
+                <div class="post-meta">
+                    <span class="post-date">January 2026</span>
+                    <span class="post-read-time">5 min read</span>
+                </div>
+            </div>
+            
+            <div class="article-hero-image">
+                <img src="/src/Dwayne.jpg" alt="Dwayne Johnson">
+            </div>
+            
+            <div class="article-content">
+                <p>
+                    Hoşgeldiniz. Şu an evimde internet olmadığı için yazı yazma kararı aldım ve bu yazı size bu sebeple ulaşacak. Belki biraz uzun ve görsel kullanmayarak yazacağım için okumak istemeyebilirsiniz saygı duyarım.
+                    Şimdi gelelim konumuza. Gençler neden vakit bulamıyor. Yani en azından kendi adıma ben neden vakit bulamıyorum. Bunun başlıca sebebi olan <b>kısa video bağımlılığını</b> anlatmama dahi gerek yok.
+                    Günde 10 saati bulan ekran süreleri uyanık olduğumuz vaktin en az yarısını işgal ediyor. Bu bağımlılıktan kurtulmak için tabi ki sağlam bir irade lazım(ben şahsen pek başarılı değilim). İrade olmadan önerilen yöntemlerin(ekran süresi kısıtlama, uygulama silme vb. )
+                    hiçbirinin işe yaramadığını düşünüyorum. İşe yaramama sebeplerini şöyle açıklayayım. İnstagramın ekran süresini kısıtladığımızı farz edelim. Bir arkadaşım bana heyecanlı bir şeyler X post/story atmış dediği anda ben o süre sınırını aşacağım ya da anlık da olsa kaldıracağım.
+                </p>
                 
-            </p>
+                <p>
+                    Bu durum neredeyse her gün olacak çünkü kendime tanıdığım süre 1 saat ise o 1 saatin 50 dakikası gece yatmadan önce bitecek. Sabah da uyanır uyanmaz kalan 10 dakikayı bitireceğim. Bu durumu her gün yaşayınca ister istemez o sınırı kaldırma çözümü kalıcı hale gelecek ve tekrar ekran sürem yükselecek.
+                    Çünkü bırakmak için yeterli iradeye sahip değilim.
+                </p>
+                
+                <div class="article-divider"></div>
+                
+                <p>
+                    Şu ana kadar denediğim en etkili yöntem <b>StopScroll</b> adında bir uygulamaydı. Uygulama basitçe Reels ya da Shorts sekmesini açtığınızda bunu algılayıp önceki ekrana dönüyor. 
+                    Yani reels ve shorts dışındaki Instagram ve Youtube özelliklerini kullanmaya devam ederken bunları engelliyor. Ben uygulamayı 1 ay falan kullanıp ekran süremi 1-2 saat bandında düşürdükten sonra "Oldum ben ya" psikolojisiyle silmiştim.
+                </p>
+                
+                <p>
+                    Devam edelim, bir diğer etken: <b>uyku düzeni.</b> KYK yurtlarını çoğunluğun aksine sevsem de, sağlıklı bir uyku düzeni oturtmak için pek sağlıklı ortamlar değiller.
+                    4,6 ya da 12 kişinin tek odada kaldığı bir ortamda istediğiniz saatte değil herkesin istediği saatte uyuyabilirsiniz. Sabah 7de dersiniz var ve 10-11 gibi uyumanız daha mı sağlıklı olur?
+                    Fark etmez. Işık 12'de kapanır şanslıysanız 12 buçuk gibi uyursunuz. Bu altı buçuk saat uyku demek. Ve <b>sürdürülebilir değil</b>. Haftasonu yeterince uyusanız bile 3. ya da 4. günde artık enerjiniz kalmayacak.
+                </p>
+                
+                <p>
+                    Bu enerjisizlik sizin motivasyonunuzu düşürecek ve bazı yapmanız gereken işleri yapmamaya, ertelemeye başlayacaksınız. Bu uyku eksikliği sizin olan vaktinizi de kullanamamanıza sebep olacak.
+                </p>
+                
+                <div class="article-divider"></div>
+                
+                <p>
+                    Şimdilik aklıma gelen bu kadar ve internet yoksunluğundan şu an reels de izleyemediğim için uykum biraz erken geldi o yüzden bitireceğim daha sonra aklıma gelirse bir şeyler eklerim. Bu 2 sebep neye yol açıyor onu belirtelim. Sabah derslerinden verim alamıyorsunuz. 
+                    Zaten az uyuyarak beslemediğiniz beyniniz bir de sabah reelsiyle eriyor. Sabah dersinden verim alamamanız bütün sabah derslerini tekrar çalışmanız anlamına geliyor fark etmişsinizdir. Öğleden sonra hiçbir dersiniz olmadığını düşünsek bile öğleden sonranız sabahki dersi öğrenmekle geçecek.
+                </p>
+                
+                <p>
+                    Ödevleriniz olacak, yurtta yapmanız gereken "ev" işleri olacak, arkadaşlarınız bir kahve içmek isteyecek, finaller yaklaşacak, herhangi bir kulübe girdiyseniz sürekli bir kulüp işi yapacaksınız derken bu liste uzar gider. Ama siz bir yandan kendinizi mesleki olarak herhangi bir ek alanda geliştirmek istiyor, bir spor dalıyla uğraşmak istiyor, romantik bir ilişki de istiyorsunuz. Denge kurulabilecek bir durum değil bu. Bu listeden birden fazla şeyi feda etmek zorundasınız. Kısaca kendi açımdan neden vakit bulamadığımı anlattım.
+                </p>
+                
+                <p>
+                    Okuduğunuz için teşekkür eder.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="blog-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Ferhat Kunduracı. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.github.com/SchumacherFarad">GitHub</a>
+                <a href="https://www.linkedin.com/in/ferhatkunduraci/">LinkedIn</a>
+                <a href="mailto:ferhatkunduraci03@gmail.com">Email</a>
+            </div>
         </div>
-    </div>
+    </footer>
 </body>
+</html>

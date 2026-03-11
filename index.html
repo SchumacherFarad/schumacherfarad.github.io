@@ -1,36 +1,337 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Ferhat Kunduracı</title>
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferhat Kunduracı | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<div>
-<h1><span id = "baslik">Ferhat Kunduracı</span></h1>
-<nav class="navbar">
-    <ul>
-        <li><a href="https://www.github.com/SchumacherFarad">Github</a></li>
-        <li><a href="/blog/blog.html">Blog</a></li>
-        <li><a href="https://www.linkedin.com/in/ferhatkunduraci/">Linkedin</a></li>
-        <li><a href="mailto:ferhatkunduraci03@gmail.com">Email</a></li>
-        <li><a href="tel:+905445719351">Phone</a></li>
-    </ul>
-</nav>
-</div>
-</header>
-<main>
-<h3>Software Engineer, Istanbul Technical University</h3>
-<h2>Repositories</h2>
-<div class="projects">
-    <a href="https://github.com/El-Primos/blg317" target="_blank"><div>NBA Database Project</div></a>
-    <a href="https://github.com/SchumacherFarad/BasicBank" target="_blank"><div>BasicBank</div></a>
-    <a href="https://github.com/SchumacherFarad/BasicBankFlaskApp" target="_blank"><div>BasicBankFlaskApp</div></a>
-    <a href="https://github.com/SchumacherFarad/BasicWeatherAPIReader" target="_blank"><div>BasicWeatherAPIReader</div></a>
-    <a href="https://github.com/SchumacherFarad/LeetCode" target="_blank"><div>LeetCode</div></a>
-</div>
+    <div class="noise-overlay"></div>
+    
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="nav-logo">FK</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/blog/blog.html">Blog</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Ferhat Kunduracı</h1>
+                <p class="hero-title">Software Engineer</p>
+                <p class="hero-subtitle">Istanbul Technical University</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-shape"></div>
+                <div class="hero-shape-2"></div>
+            </div>
+        </section>
 
-</main>
+        <section id="about" class="section">
+            <div class="section-content">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I'm a software engineer based in Istanbul, currently pursuing my degree at Istanbul Technical University. I specialize in building efficient, scalable applications with a focus on clean architecture and modern technologies.</p>
+                        <p>With a passion for problem-solving and continuous learning, I work on projects that push my skills and contribute to meaningful solutions.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number has-suffix" data-count="5">0</span>
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="8">0</span>
+                            <span class="stat-label">Languages</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number static">2027</span>
+                            <span class="stat-label">Graduating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Go</span>
+                            <span class="skill-tag">Rust</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">Shell</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Git/GitHub</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Hyprland</span>
+                            <span class="skill-tag">Waybar</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Currently Learning</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">System Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <a href="https://github.com/SchumacherFarad/darknet-tui" target="_blank" class="project-card">
+                        <div class="project-number">01</div>
+                        <h3 class="project-title">darknet-tui</h3>
+                        <p class="project-desc">A modern, dashboard-style Network Manager TUI for Linux</p>
+                        <div class="project-tags">
+                            <span>Go</span>
+                            <span>TUI</span>
+                            <span>Linux</span>
+                        </div>
+                        <span class="project-arrow">→</span>
+                    </a>
+                    <a href="https://github.com/SchumacherFarad/darkblue-tui" target="_blank" class="project-card">
+                        <div class="project-number">02</div>
+                        <h3 class="project-title">darkblue-tui</h3>
+                        <p class="project-desc">A terminal-based Bluetooth manager for Linux</p>
+                        <div class="project-tags">
+                            <span>Rust</span>
+                            <span>TUI</span>
+                            <span>Linux</span>
+                        </div>
+                        <span class="project-arrow">→</span>
+                    </a>
+                    
+                    <a href="https://github.com/SchumacherFarad/Prism" target="_blank" class="project-card">
+                        <div class="project-number">03</div>
+                        <h3 class="project-title">Prism</h3>
+                        <p class="project-desc">Hybrid Investment Vibe Dashboard - Track TEFAS funds and Cryptocurrency</p>
+                        <div class="project-tags">
+                            <span>Go</span>
+                            <span>Finance</span>
+                            <span>API</span>
+                        </div>
+                        <span class="project-arrow">→</span>
+                    </a>
+                    
+                    <a href="https://github.com/SchumacherFarad/madlen-case" target="_blank" class="project-card">
+                        <div class="project-number">04</div>
+                        <h3 class="project-title">madlen-case</h3>
+                        <p class="project-desc">A case management application</p>
+                        <div class="project-tags">
+                            <span>TypeScript</span>
+                            <span>Web</span>
+                        </div>
+                        <span class="project-arrow">→</span>
+                    </a>
+                    
+                    <a href="https://github.com/SchumacherFarad/LeetCode" target="_blank" class="project-card">
+                        <div class="project-number">05</div>
+                        <h3 class="project-title">LeetCode Solutions</h3>
+                        <p class="project-desc">My original solutions for LeetCode problems</p>
+                        <div class="project-tags">
+                            <span>C++</span>
+                            <span>Algorithms</span>
+                        </div>
+                        <span class="project-arrow">→</span>
+                    </a>
+
+                    <a href="https://github.com/SchumacherFarad/BasicBank" target="_blank" class="project-card">
+                        <div class="project-number">06</div>
+                        <h3 class="project-title">BasicBank</h3>
+                        <p class="project-desc">A basic Bank simulation with C++</p>
+                        <div class="project-tags">
+                            <span>C++</span>
+                            <span>OOP</span>
+                        </div>
+                        <span class="project-arrow">→</span>
+                    </a>
+                    
+                    <a href="https://github.com/SchumacherFarad/BasicBankFlaskApp" target="_blank" class="project-card">
+                        <div class="project-number">07</div>
+                        <h3 class="project-title">BasicBank Flask App</h3>
+                        <p class="project-desc">Web-based banking interface built with Flask</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                        <span class="project-arrow">→</span>
+                    </a>
+                    
+                    <a href="https://github.com/SchumacherFarad/KunduracilarTurizm" target="_blank" class="project-card">
+                        <div class="project-number">08</div>
+                        <h3 class="project-title">KunduracilarTurizm</h3>
+                        <p class="project-desc">Travel agency website</p>
+                        <div class="project-tags">
+                            <span>TypeScript</span>
+                            <span>Web</span>
+                        </div>
+                        <span class="project-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p class="contact-intro">Let's connect! Feel free to reach out for collaborations, questions, or just to say hello.</p>
+                        <div class="contact-links">
+                            <a href="https://www.github.com/SchumacherFarad" target="_blank" class="contact-link">
+                                <span class="contact-icon">GH</span>
+                                <span class="contact-text">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ferhatkunduraci/" target="_blank" class="contact-link">
+                                <span class="contact-icon">LI</span>
+                                <span class="contact-text">LinkedIn</span>
+                            </a>
+                            <a href="mailto:ferhatkunduraci03@gmail.com" class="contact-link">
+                                <span class="contact-icon">@</span>
+                                <span class="contact-text">Email</span>
+                            </a>
+                            <a href="tel:+905445719351" class="contact-link">
+                                <span class="contact-icon">+90</span>
+                                <span class="contact-text">Phone</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ferhat Kunduracı. Built with passion.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section, .project-card, .skill-category').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+
+        // Stats counter animation
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.stat-number:not(.static)');
+                    counters.forEach(counter => {
+                        const target = parseInt(counter.getAttribute('data-count'));
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        let current = 0;
+                        
+                        const updateCounter = () => {
+                            current += step;
+                            if (current < target) {
+                                counter.textContent = Math.floor(current);
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                const suffix = counter.classList.contains('has-suffix') ? '+' : '';
+                                counter.textContent = target + suffix;
+                            }
+                        };
+                        
+                        updateCounter();
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsSection = document.querySelector('.about-stats');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
+</html>
